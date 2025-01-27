@@ -15,7 +15,14 @@ import androidx.core.view.WindowInsetsCompat;
 import com.example.demo250127.R;
 
 import java.util.Random;
-
+ /**
+ * MainActivity is the main activity of the application that manages the user interface and logic of the application.
+ *
+ * Main features:
+ * - Treatment of various dialog boxes (AlertDialog).
+ * - Changing the background color of the main layout dynamically.
+ * - Using EdgeToEdge to set a borderless display.
+ */
 public class MainActivity extends AppCompatActivity {
     AlertDialog.Builder button1,button2,button3,button4,button5;
     public View backgroundLayout;
@@ -52,7 +59,9 @@ public class MainActivity extends AppCompatActivity {
             backgroundLayout.setBackgroundColor(Color.YELLOW); // צבע צהוב
         }
     }
-
+     /**
+      * Changes the background color of the main display to a random color from 5 possible colors.
+      */
 
 
     public void Message(View view) {
@@ -62,6 +71,11 @@ public class MainActivity extends AppCompatActivity {
         AlertDialog mg=button1.create();
         mg.show();
     }
+     /**
+      * A simple dialog chest that displays a text-only message.
+      *
+      * @param view The element clicked by the user.
+      */
 
 
     public void Message2(View view) {
@@ -72,6 +86,11 @@ public class MainActivity extends AppCompatActivity {
         AlertDialog mg2=button2.create();
         mg2.show();
     }
+     /**
+      * A dialog chest that displays a message with a custom icon.
+      *
+      * @param view The element clicked by the user.
+      */
 
     public void Message3(View view) {
         button3=new AlertDialog.Builder(this);
@@ -89,6 +108,11 @@ public class MainActivity extends AppCompatActivity {
         AlertDialog mg3=button3.create();
         mg3.show();
     }
+     /**
+      * A dialog chest with a close button only, which cannot be canceled.
+      *
+      * @param view The element clicked by the user.
+      */
 
     public void Message4(View view) {
         button4 = new AlertDialog.Builder(this);
@@ -120,6 +144,11 @@ public class MainActivity extends AppCompatActivity {
 
         mg4.show();
     }
+     /**
+      * Dialog chest with buttons to change the background color or close the dialog.
+      *
+      * @param view The element clicked by the user.
+      */
 
     public void Message5(View view) {
         button5 = new AlertDialog.Builder(this);
@@ -153,5 +182,10 @@ public class MainActivity extends AppCompatActivity {
         AlertDialog mg5 = button5.create();
         mg5.show();
     }
+     /**
+      * Dialog chest with buttons to change the background color, reset to white or close the dialog.
+      *
+      * @param view The element clicked by the user.
+      */
 
 }
